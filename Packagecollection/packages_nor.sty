@@ -1,0 +1,46 @@
+\usepackage[utf8]{inputenc}
+\ProvidesPackage{packages_nor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xr} 
+\usepackage{subfiles}
+\usepackage{float}
+
+\usepackage{textcomp}
+\usepackage{siunitx} 
+
+\usepackage{booktabs}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\usepackage[norsk]{babel} 
+\addto\extrasnorsk{
+    \renewcommand*\contentsname{Innholdsfortegnelse} 
+    \def\pagename{Side  }
+    \renewcommand{\listfigurename}{Figurliste} 
+    \renewcommand{\listtablename}{Tabell-liste}  
+    \def\equationautorefname{Ligning}       
+    \def\figureautorefname{Figur} 
+    \def\tableautorefname{Tabell}
+    \def\sectionautorefname{Kapittel}
+    \def\subsectionautorefname{\sectionautorefname} 
+    \def\subsubsectionautorefname{\sectionautorefname}
+    \def\bibrefname{Referanser}
+}
+
+\def\conclusion{Konklusjon}
+\def\theorysec{Teori}
+\def\workflowsec{Arbeidsfordeling}
+\def\resultssec{Resultater}
+\def\summarysec{Sammendrag}
+\def\forewordsec{Forord}
+
+\usepackage{appendix}
+\newcommand{\addappendix}{  
+    \newpage
+    \appendix
+    \section*{Vedlegg} 
+    \addcontentsline{toc}{section}{Vedlegg}  
+    \renewcommand{\thesubsection}{\Alph{subsection}}
+}
+
+\usepackage[left = \flqq{}, right = \frqq{}, leftsub = \lq{}, rightsub = \rq{}]{dirtytalk} 

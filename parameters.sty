@@ -1,0 +1,28 @@
+\ProvidesPackage{parameters}
+%Parameters:
+%Title page info:
+\def\organizationname{\textbf{Norges teknisk-naturvitenskapelige universitet}}
+\def\maintitle{Nice Main Title}
+\def\subtitle{Catchy and descriptive subtitle}
+\def\coursename{TEX 4321 – Learn LaTeX}
+\def\dateline{\today}
+\def\titlepagefigure{Graphical/link.jpg}
+
+%Language dependent formatting:
+\def\setlanguage{brit}%use 'brit' [English, British] or 'nor' [Norwegian, Bokmål]
+
+%Reference style:
+\def\referencestyle{apa} %Examples: ieee, apa
+
+
+%Appearance depth in Table of Contents:
+\setcounter{tocdepth}{2} %sections{1}, subsections{2}, subsubsections{3}
+
+%header text:
+\def\leftheadertext{\monthname\text{, }\the\year{}\text{  }\maintitle \text{ – }\sectionautorefname\text{ }\thesection}
+\def\rightheadertext{\coursename}
+
+%Page Margins in either x inches (xin) or metric (xmm, xcm)
+\def\headhight{1in}
+\def\bottommargin{1in}
+\def\sidemargin{1in}
