@@ -1,0 +1,15 @@
+%Make sure body of text start on new page.
+%Sets page numbering to arabic numerals.
+\pagebreak
+\pagenumbering{arabic}
+
+%Header text for the main body.
+\lhead{\leftheadertext}
+\rhead{\rightheadertext}
+
+%Include or exclude files for the main body here.
+%Change order of files here
+\input{Main/theory}
+\input{Main/results}
+\input{Main/conclusion}
+\input{Main/workflow}

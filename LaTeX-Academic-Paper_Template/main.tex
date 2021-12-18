@@ -1,0 +1,19 @@
+%Denne malen er laget av Edvard Hofseth Rindal (e.h.rindal@gmail.com).
+%Det er fri bruk, og det er ikke behov for å oppgav i tekstfil, men venligst la navn og mail bli liggende i kildefilen.
+
+%Ved forslag til endringer og/eller oppdagelse av problemer, venligst send en mail til e.h.rindal@gmail.com, slik at jeg kan se på dette.
+%Ved spørsmål om malen, vennligst vis til min git (https://github.com/EdvardHR/LaTeX-Academic-Paper_Template/), slik at jeg igjen får mulighet til å forbedre/endre/tilpasse ulike versjoner.
+
+\documentclass[1p,sort&compress]{article}
+\usepackage{./Packagecollection/non_language_dependent_packs}
+
+
+%_________Dokument_begins_here_________%
+\begin{document}
+\input{Front/main}
+\input{Main/main}
+\pagebreak
+\printbibliography[heading = bibintoc, title = \bibrefname]{}
+
+\input{Back/main}
+\end{document}

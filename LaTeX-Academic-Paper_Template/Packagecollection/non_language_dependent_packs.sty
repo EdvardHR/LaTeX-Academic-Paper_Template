@@ -1,0 +1,69 @@
+\usepackage[utf8]{inputenc}
+\ProvidesPackage{non_languange_dependent_packs}
+
+%Declare some possible date-formats
+\usepackage{datetime}
+\newdateformat{daymonthyeardate}{%
+  \THEDAY~\monthname[\THEMONTH], \THEYEAR}
+\newdateformat{yearmonthdaydate}{%
+    \THEYEAR - \monthname[\THEMONTH]~\THEDAY}
+\newdateformat{yeardaymonthdate}{%
+    \THEYEAR - \THEDAY~\monthname[\THEMONTH]}
+\newdateformat{monthdayyeardate}{%
+    \monthname[\THEMONTH]~\THEDAY, \THEYEAR}
+
+\usepackage{./parameters}
+\usepackage{./Packagecollection/packages_\setlanguage}
+
+\usepackage[style=\referencestyle,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{xr} 
+\usepackage{subfiles}
+
+\usepackage{textcomp}
+\usepackage{siunitx} 
+
+%Ja vi elsker realfag :D
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{commath}
+\usepackage{siunitx}
+\usepackage[american,siunitx,nooldvoltagedirection]{circuitikz}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{bm}
+
+\def\duline#1{\underline{\underline{#1}}}
+
+%Estetikk og noe praktisk
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[parfill]{parskip}
+\usepackage{color}
+\usepackage[colorlinks=true,allcolors=black]{hyperref}
+\usepackage{lscape}
+\usepackage{float}
+\usepackage{flafter}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage[headheight=\headhight, left=\sidemargin, bottom = \bottommargin]{geometry}
+\usepackage{pdfpages}
+\usepackage{lastpage}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\urlstyle{same}
+\fancyhf{}
+\usepackage{csquotes}
+\newcommand{\frontmatter}{\pagenumbering{roman}}
+
+\usepackage[left = \flqq{}, right = \frqq{}, leftsub = \flq{}, rightsub = \frq{},]{dirtytalk}
+\usepackage{chngpage}
+\usepackage{datetime}
+
