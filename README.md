@@ -43,10 +43,10 @@ Folders with files:
 
 Then the content of  _main.txt_s:
 main.txt:
-1. \input{.\SectionFolder0\main.txt}\pagebreak (add _\pagebreak_ to start next "input" on a new page)
-2. \input{.\SectionFolder1\main.txt}
+1. \input{\SectionFolder0/main.txt}\pagebreak (add _\pagebreak_ to start next "input" on a new page)
+2. \input{\SectionFolder1/main.txt}
 
-SectionFolder0\main.txt:
+SectionFolder0/main.txt:
 
 1. \input{file0}
 2. \input{file1}
