@@ -9,6 +9,7 @@ The template is created with the use of part-seperation in mind, and thus optima
 
 
 When first initiating a new project using this template, go through the "paramteres.sty"-file to make the primary changes like langeuage (brit or nor), title , reference style (ieee or apa) etc.
+If using clean-branch, the relevant line in "\Front\title page" must be commented back in again when/if inserting a pictrue/figure.
 
 All authors are put into the authors.txt-file as shown by placeholders. 
 
@@ -57,7 +58,7 @@ SectionFolder1\main.txt:
 3. \input{file2}
 
 
-This way, it is easy to change the order of the different files or section, as each section is a layer of its own.
+This way, it is easy to change the order of the different files or sections, as each section is a layer of its own.
 This also imporves the workability when cooparating on a project as one easly can exlude the section one works with to avoid any issues from others.
 
 This also imporves troubleshooting abilities as it is easier to controll each segment on its own. 
